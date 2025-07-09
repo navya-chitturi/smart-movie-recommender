@@ -70,3 +70,4 @@ After a few seconds, the app will open automatically at:
    http://localhost:8501
 
 ---
+🔗 **Live Demo**: [Click here to try the app](https://smart-movie-recommender-gwwfj69ryvc3b26zvtzrr5.streamlit.app)
