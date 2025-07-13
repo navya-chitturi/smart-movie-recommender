@@ -2,16 +2,38 @@ import streamlit as st
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
-# 💜 Add pastel gradient background
 st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #fff0f5, #fceff9);
+        background: linear-gradient(135deg, #f8f4ff, #ffeaf4);
         background-attachment: fixed;
         background-size: cover;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .stButton>button {
+        background-color: #e5ccff;
+        color: black;
+        border-radius: 12px;
+        padding: 8px 16px;
+        font-weight: 500;
+    }
+
+    .stButton>button:hover {
+        background-color: #d4b3ff;
+        color: white;
+    }
+
+    h1, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+        color: #6a0dad;
+    }
+
+    .css-1aumxhk, .css-qrbaxs {
+        color: #333333;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Load the cleaned movie dataset
 df = pd.read_csv("cleaned_movies.csv")
