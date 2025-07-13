@@ -5,34 +5,53 @@ from sklearn.metrics.pairwise import cosine_similarity
 st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #f8f4ff, #ffeaf4);
+        background: linear-gradient(135deg, #fef6f0, #fceae8);
         background-attachment: fixed;
         background-size: cover;
         font-family: 'Segoe UI', sans-serif;
+        color: #3e3e3e;
     }
 
     .stButton>button {
-        background-color: #e5ccff;
-        color: black;
-        border-radius: 12px;
-        padding: 8px 16px;
+        background-color: #f7c8c2;
+        color: #3e3e3e;
+        border-radius: 15px;
+        padding: 8px 20px;
         font-weight: 500;
+        border: none;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
     }
 
     .stButton>button:hover {
-        background-color: #d4b3ff;
+        background-color: #f4b6ae;
         color: white;
     }
 
     h1, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-        color: #6a0dad;
+        color: #c96480;
+    }
+
+    .stRadio > div {
+        background-color: #fff6f4;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .stSelectbox, .stTextInput, .stTextArea {
+        background-color: #fff0eb;
+        border-radius: 12px;
     }
 
     .css-1aumxhk, .css-qrbaxs {
-        color: #333333;
+        color: #4b4b4b;
+    }
+
+    .stMarkdown {
+        font-size: 17px;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 # Load the cleaned movie dataset
